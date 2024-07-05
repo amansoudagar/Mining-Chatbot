@@ -30,6 +30,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-pro")
 chat = model.start_chat(history=[])
 
+
 def get_gemini_response(question):
     try:
         response = chat.send_message(question, stream=True)
@@ -37,6 +38,7 @@ def get_gemini_response(question):
     except Exception as e:
         st.error(f"Error: {e}")
         return None
+
 
 # Set page configuration
 st.set_page_config(page_title="MineMentor", page_icon="🚀", layout="wide")
