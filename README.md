@@ -21,7 +21,7 @@ MineMentor is a Streamlit-based web application that integrates AI capabilities 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/minementor.git
+   git clone https://github.com/beast0686/minementor.git
    cd minementor
    ```
 
